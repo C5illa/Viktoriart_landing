@@ -46,11 +46,11 @@
   }
 
   /* belépő oldal */
-  var nameEl = document.getElementById('childName');
+  var nameEl = document.getElementById('child-name');
   if (nameEl) {
     var d = ctx.data;
-    var placeEl = document.getElementById('place');
-    var btn = document.getElementById('continueBtn');
+    var placeEl = document.getElementById('child-place');
+    var btn = document.getElementById('folder-button');
     var token = function (el, attr) {
       var v = attr ? el.getAttribute(attr) : el.textContent;
       return (v || '').indexOf('{{') > -1 ? '' : (v || '').trim();
@@ -62,10 +62,10 @@
     if (placeEl) placeEl.textContent = place || token(placeEl) || 'intézmény – csoport';
     if (!d.link) d.link = token(btn, 'data-link');
 
-    var box = document.getElementById('consent');
-    var modal = document.getElementById('modal');
-    var modalOk = document.getElementById('modalOk');
-    var status = document.getElementById('statusMsg');
+    var box = document.getElementById('consent-checkbox');
+    var modal = document.getElementById('consent-modal');
+    var modalOk = document.getElementById('consent-modal-ok');
+    var status = document.getElementById('status-message');
 
     function closeModal() { modal.hidden = true; }
 
