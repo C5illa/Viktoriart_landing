@@ -89,8 +89,8 @@ details[open] summary span.chev { transform: rotate(45deg); }
 button {border: none;}
 .button-primary { width: 100%; padding: 15px 20px; font-family: 'DM Sans', sans-serif; font-size: 15.5px; font-weight: 600; border-radius: 10px; cursor: pointer; background: #FFFFFF; border: 1.5px solid #2F4B3C; color: #2F4B3C; transition: background 0.15s ease; }
 .button-primary:hover { border: 1.5px solid #2F4B3C; background: #EEF2EF; }
-.button-secondary { min-width: 160px; padding: 15px 20px; font-family: 'DM Sans', sans-serif; font-size: 15.5px; font-weight: 600; border-radius: 10px; border: 1.5px solid transparent; cursor: pointer; background: #E30613; color: #ffffff; transition: background 0.15s ease; }
-.button-secondary:hover { border: 1.5px solid #2F4B3C; background: #ffb5ba; color: #E30613; }
+.button-secondary { min-width: 160px; padding: 15px 20px; font-family: 'DM Sans', sans-serif; font-size: 15.5px; font-weight: 600; border-radius: 10px; cursor: pointer; background: #E30613; color: #ffffff; transition: background 0.15s ease; }
+.button-secondary:hover { background: rgb(181, 0, 12); }
 .status-note { margin: 16px 0 0; padding: 12px 14px; background: #FBF3E6; border: 1px solid #E9D2A6; border-radius: 8px; font-size: 13.5px; line-height: 1.55; color: #7A5B1E; }
 .gift-block { margin: 40px 0 0; padding-top: 28px; border-top: 1px solid #E7E4DD; display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 16px; }
 .gift-text { margin: 0; font-size: 15px; line-height: 1.65; color: #4A4843; text-wrap: pretty; }
@@ -128,8 +128,8 @@ button {border: none;}
 .faq-answer { padding: 0 28px 22px 0; font-size: 15px; line-height: 1.7; color: #6B6963; }
 .answer-p { margin: 0 0 12px; }
 .answer-list { margin: 0 0 12px; padding-left: 20px; display: grid; gap: 4px; }
-.form-red { color: #E30613; font-weight: 600; }
-.form-blue { color: #1B4FA0; font-weight: 600; }
+.form-red { color: #E30613; }
+.form-blue { color: #00B3CC; }
 .answer-p-last { margin: 0; }
 .answer-note { margin-top: 16px; padding: 16px 18px; background: #EEF2EF; border-radius: 12px; }
 .answer-note-p { margin: 0 0 10px; color: #1C1B19; }
