@@ -1,82 +1,98 @@
 <!doctype html>
 <html lang="hu">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<meta name="referrer" content="no-referrer">
-<meta name="description" content="A gyermek mintaképeit tartalmazó mappa elérése.">
-<meta name="theme-color" content="#FAF9F6">
-<title>Mintaképek - ViktóriArt Fotó</title>
-<link rel="icon" type="image/png" href="favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="A gyermek mintaképeit tartalmazó mappa elérése.">
+  <meta name="theme-color" content="#FAF9F6">
+  <title>Mintaképek - ViktóriArt Fotó</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<div class="page">
+  <div class="page">
 
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" aria-label="ViktóriArt Fotó - mintaképek" class="site-logo">
-        <img src="logo.png" alt="ViktóriArt Fotó" class="site-logo-img">
-      </a>
-      <nav aria-label="Fő navigáció" class="site-nav">
-        <a href="gyik.html" class="nav-link">GYIK</a>
-        <a href="kapcsolat.html" class="nav-link">Kapcsolat</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="page-main">
-    <div class="content">
-
-      <h1 class="page-title">Kedves Szülő!</h1>
-
-      <p class="intro-primary">Ez a mappa <strong id="child-name" class="text-strong">{{GYEREK_NEV}}</strong> mintaképeit tartalmazza.</p>
-      <p class="intro-secondary">Ha digitális képet rendel, az elkészült nagyfelbontású fájl (a rendelés feldolgozása és a kép utómunkája után) is ebbe a mappába kerül majd, ezért érdemes megőrizni ezt az e-mailt.</p>
-      <p class="intro-secondary-last">A mappát megnyitás után a saját Google Drive fiókjában a „Velem megosztva” menüpontban is megtalálja.</p>
-
-      <div class="notice-card">
-        <h2 class="notice-title">Tájékoztató</h2>
-        <div class="notice-scroll">
-        <p class="notice-text">Ez a link kizárólag Ön számára készült, és a benne található tartalom csak azok számára érhető el, akik ismerik ezt az egyedi címet. Kérjük, ne ossza meg illetéktelenekkel.</p>
-        <p class="notice-text">A link megnyitásáról és az elfogadás időpontjáról technikai naplóbejegyzés készül. Ezt kizárólag annak igazolására használjuk, hogy a tartalom eljutott Önhöz, és legfeljebb 90 napig őrizzük meg.</p>
-        <p class="notice-text-last">Az Ön e-mail címét kizárólag a megrendelés feldolgozásához és az ezzel kapcsolatos ügyintézéshez használjuk fel. Az adatokat harmadik félnek nem adjuk ki. Kérdés esetén forduljon hozzánk a <a href="kapcsolat.html" class="link-inline">Kapcsolat</a> oldalon található elérhetőségeken.</p>
-        </div>
-
-        <label class="consent consent-row">
-          <input type="checkbox" id="consent-checkbox" class="consent-input">
-          <span aria-hidden="true" class="box"></span>
-          <span>Elolvastam és elfogadom a tájékoztatót.</span>
-        </label>
-
-        <button type="button" class="cta button-primary" id="folder-button" data-link="{{CEL_LINK}}">Tovább a mappához</button>
-
-        <p id="status-message" hidden class="status status-note"></p>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" aria-label="ViktóriArt Fotó - mintaképek" class="site-logo">
+          <img src="logo.png" alt="ViktóriArt Fotó" class="site-logo-img">
+        </a>
+        <nav aria-label="Fő navigáció" class="site-nav">
+          <a href="gyik.html" class="nav-link">GYIK</a>
+          <a href="kapcsolat.html" class="nav-link">Kapcsolat</a>
+        </nav>
       </div>
+    </header>
+
+    <main class="page-main">
+      <div class="content">
+
+        <h1 class="page-title">Kedves Szülő!</h1>
+
+        <p class="intro-primary">Ez a mappa <strong id="child-name" class="text-strong">{{GYEREK_NEV}}</strong>
+          mintaképeit tartalmazza.</p>
+        <p class="intro-secondary">Ha digitális képet rendel, az elkészült nagyfelbontású fájl (a rendelés feldolgozása
+          és a kép utómunkája után) is ebbe a mappába kerül majd, ezért érdemes megőrizni ezt az e-mailt.</p>
+        <p class="intro-secondary-last">A mappát megnyitás után a saját Google Drive fiókjában a „Velem megosztva”
+          menüpontban is megtalálja.</p>
+
+        <div class="notice-card">
+          <h2 class="notice-title">Tájékoztató</h2>
+          <div class="notice-scroll">
+            <p class="notice-text">Ez a link kizárólag az Ön számára készült, és a benne található tartalom csak azok
+              számára érhető el, akik ismerik ezt az egyedi linket. Kérjük, ne ossza meg illetéktelenekkel!</p>
+            <p class="notice-text">A link megnyitásáról és az elfogadás időpontjáról értesítést kapunk, amit kizárólag
+              annak igazolására használunk, hogy a mintaképek mappája eljutott Önhöz.</p>
+            <p class="notice-text-last">Az Ön e-mail címét kizárólag a megrendelés feldolgozásához és az ezzel
+              kapcsolatos ügyintézéshez használjuk fel. Az adatokat harmadik félnek nem adjuk ki. Kérdés esetén
+              forduljon hozzánk a <a href="kapcsolat.html" class="link-inline">Kapcsolat</a> oldalon található
+              elérhetőségeken.</p>
+          </div>
+
+          <label class="consent consent-row">
+            <input type="checkbox" id="consent-checkbox" class="consent-input">
+            <span aria-hidden="true" class="box"></span>
+            <span>Elolvastam és elfogadom a tájékoztatót.</span>
+          </label>
+
+          <button type="button" class="cta button-primary" id="folder-button" data-link="{{CEL_LINK}}">Tovább a
+            mappához</button>
+
+          <p id="status-message" hidden class="status status-note"></p>
+        </div>
 
         <div class="gift-row gift-block">
           <p class="gift-text">A kiválasztott fotókból ajándéktárgyak is rendelhetőek.</p>
-          <a href="https://royalgraphic.hu/fotos-ajandek" target="_blank" rel="noopener noreferrer" class="gift-link gift-cta">További információ<span aria-hidden="true" class="arrow">→</span></a>
+          <a href="https://royalgraphic.hu/fotos-ajandek" target="_blank" rel="noopener noreferrer"
+            class="gift-link gift-cta">További információ<span aria-hidden="true" class="arrow">→</span></a>
         </div>
 
-    </div>
-  </main>
+      </div>
+    </main>
 
-  <footer class="site-footer">
-    <p class="footer-text">designed by: <a href="https://royalgraphic.hu" target="_blank" rel="noopener noreferrer" class="footer-link">Royal Graphic</a></p>
-  </footer>
+    <footer class="site-footer">
+      <p class="footer-text">designed by: <a href="https://royalgraphic.hu" target="_blank" rel="noopener noreferrer"
+          class="footer-link">Royal Graphic</a></p>
+    </footer>
 
-  <div id="consent-modal" hidden class="modal-backdrop">
+    <div id="consent-modal" hidden class="modal-backdrop">
       <div role="alertdialog" aria-modal="true" class="modal-box">
         <p class="modal-text">Kérjük, fogadja el a tájékoztatót a folytatáshoz.</p>
         <button type="button" id="consent-modal-ok" class="modal-button">Rendben</button>
       </div>
-  </div>
+    </div>
 
-</div>
-<script src="app.js" defer></script>
+  </div>
+  <script src="app.js" defer></script>
 </body>
+
 </html>
