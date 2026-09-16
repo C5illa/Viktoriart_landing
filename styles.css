@@ -147,7 +147,7 @@ details[open] summary span.chev { transform: rotate(45deg); }
 .contact-lead { margin: 0 0 16px; font-size: 16.5px; line-height: 1.65; color: #4A4843; text-wrap: pretty; }
 .contact-lead-link { color: rgb(47, 75, 60); font-weight: 600; text-decoration: none; }
 .contact-lead-last { margin: 0 0 32px; font-size: 16.5px; line-height: 1.65; color: #4A4843; text-wrap: pretty; }
-.phone-card { display: block; background: #FFFFFF; border: 1px solid #E7E4DD; border-radius: 16px; padding: 22px 24px; text-decoration: none; transition: border-color 0.15s ease; }
+.phone-card { display: block; background: #ffbebe; border: 1px solid #E7E4DD; border-radius: 16px; padding: 22px 24px; text-decoration: none; transition: border-color 0.15s ease; }
 .phone-card:hover { border-color: #2F4B3C; }
 .phone-label { display: block; font-size: 12.5px; color: #6B6963; margin-bottom: 6px; letter-spacing: 0.02em; }
 .phone-number { display: block; font-size: 22px; font-weight: 600; color: #24392D; font-variant-numeric: tabular-nums; }
