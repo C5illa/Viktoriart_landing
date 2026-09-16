@@ -163,7 +163,7 @@ button {border: none;}
 .contact-name { font-family: 'Fraunces', Georgia, serif; font-size: 21px; font-weight: 500; margin: 0; color: #1C1B19; }
 .contact-text { margin: 0; font-size: 14.5px; line-height: 1.65; color: #6B6963; text-wrap: pretty; }
 .contact-lead-last {padding-top: 2rem;}
-.contact-lead {padding-bottom: 1rem;}
+.contact-lead, .link-spaced {padding-bottom: 1rem;}
 
 @media (max-width: 640px) {
   .gift-row { flex-direction: row; align-items: center; text-align: center; justify-content: center; }
