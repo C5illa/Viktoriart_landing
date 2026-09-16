@@ -60,8 +60,16 @@ details[open] summary span.chev { transform: rotate(45deg); }
   border-color: #24392D;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 640px) {
   .gift-row { flex-direction: column; align-items: center; text-align: center; }
+}
+
+@media (max-width: 400px) {
+  .header-inner { justify-content: center; }
+}
+
+@media (max-width: 400px) {
+  .signature { justify-content: center; text-align: center; }
 }
 
 [hidden] { display: none !important; }
@@ -143,7 +151,11 @@ details[open] summary span.chev { transform: rotate(45deg); }
 .closing-lead { margin: 0 0 12px; font-size: 15px; line-height: 1.7; color: #6B6963; }
 .closing-p { margin: 0 0 12px; font-size: 15px; line-height: 1.7; color: #6B6963; text-wrap: pretty; }
 .closing-p-last { margin: 0 0 22px; font-size: 15px; line-height: 1.7; color: #6B6963; }
-.signature { margin: 0; font-size: 15px; line-height: 1.7; color: #1C1B19; font-weight: 600; }
+.signature { margin: 0; font-size: 15px; line-height: 1.7; color: #1C1B19; font-weight: 400; display: flex; flex-wrap: wrap; column-gap: 6px; row-gap: 2px; }
+.sig-group { white-space: nowrap; }
+.sig-name { font-weight: 700; }
+.sig-detail { font-weight: 400; }
+.sig-detail .link-inline { font-weight: 400; }
 .contact-lead { margin: 0 0 16px; font-size: 16.5px; line-height: 1.65; color: #4A4843; text-wrap: pretty; }
 .contact-lead-link { color: rgb(47, 75, 60); font-weight: 600; text-decoration: none; }
 .contact-lead-last { margin: 0 0 32px; font-size: 16.5px; line-height: 1.65; color: #4A4843; text-wrap: pretty; }
