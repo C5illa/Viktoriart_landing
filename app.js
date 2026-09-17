@@ -6,7 +6,7 @@
   // 9. pontját az élesítés lépéseiről). Amíg ez helykitöltő marad,
   // a naplózás egyszerűen nem történik meg - a tovább­lépés attól
   // még zavartalanul működik.
-  var LOG_ENDPOINT = 'IDE_ÍRD_A_WEB_APP_URL-T';
+  var LOG_ENDPOINT = 'https://script.google.com/macros/s/AKfycbyqvjIVbd2L7-y7Rfmk1ihf2wVqQJKsFzxQ7aHV6fTtXjmwaK7EAXu18sjWhNz2vqh82Q/exec';
  
   var KEYS = {
     nev: ['nev', 'n', 'name'],
